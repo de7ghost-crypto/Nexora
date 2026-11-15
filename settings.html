@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Nexora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <a href="./dashboard.html" class="logo">Nexora</a>
+      <nav class="side-nav">
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html" class="active">Settings</a></li>
+        </ul>
+      </nav>
+      <a href="login.html" class="logout">Log out</a>
+    </aside>
+
+    <main class="content">
+      <section class="welcome">
+        <h1>Settings</h1>
+        <p>Manage your account preferences, security and notifications.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Account Preferences</h2>
+        <form action="#" method="post" class="profile-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="language">Language</label>
+              <select id="language">
+                <option>English</option>
+                <option>French</option>
+                <option>Spanish</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="currency">Currency</label>
+              <select id="currency">
+                <option>USD ($)</option>
+                <option>NGN (₦)</option>
+                <option>EUR (€)</option>
+                <option>GBP (£)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="timezone">Time zone</label>
+            <select id="timezone">
+              <option>Africa/Lagos (WAT)</option>
+              <option>Europe/London (GMT)</option>
+              <option>America/New_York (EST)</option>
+            </select>
+          </div>
+          <button type="submit" class="auth-btn">Save Preferences</button>
+        </form>
+      </section>
+
+      <!-- Security -->
+      <section class="panel">
+        <h2>Security</h2>
+        <form action="#" method="post" class="profile-form">
+          <div class="form-group">
+            <label for="current-password">Current password</label>
+            <input type="password" id="current-password" autocomplete="current-password">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="new-password">New password</label>
+              <input type="password" id="new-password" autocomplete="new-password" minlength="8">
+            </div>
+            <div class="form-group">
+              <label for="confirm-new-password">Confirm new password</label>
+              <input type="password" id="confirm-new-password" autocomplete="new-password">
+            </div>
+          </div>
+          <button type="submit" class="auth-btn">Update Password</button>
+        </form>
+
+        <div class="setting-row">
+          <div>
+            <h3>Two-factor authentication</h3>
+            <p>Add an extra layer of security when you log in.</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" aria-label="Two-factor authentication">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Notifications -->
+      <section class="panel">
+        <h2>Notifications</h2>
+
+        <div class="setting-row">
+          <div>
+            <h3>Email notifications</h3>
+            <p>Receive account updates by email.</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" aria-label="Email notifications" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-row">
+          <div>
+            <h3>Order updates</h3>
+            <p>Get notified when an order status changes.</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" aria-label="Order updates" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-row">
+          <div>
+            <h3>Promotions and offers</h3>
+            <p>Hear about new products and discounts.</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" aria-label="Promotions and offers">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-row">
+          <div>
+            <h3>Security alerts</h3>
+            <p>Be warned about new logins and password changes.</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" aria-label="Security alerts" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </section>
+
+      
+      <section class="panel danger-zone">
+        <h2>Danger Zone</h2>
+        <div class="setting-row">
+          <div>
+            <h3>Delete account</h3>
+            <p>Permanently remove your account and all of its data.</p>
+          </div>
+          <button type="button" class="danger-btn">Delete Account</button>
+        </div>
+      </section>
+    </main>
+
+  </div>
+</body>
+</html>

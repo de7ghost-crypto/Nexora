@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Nexora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <a href="./dashboard.html" class="logo">Nexora</a>
+      <nav class="side-nav">
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="profile.html" class="active">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+      <a href="login.html" class="logout">Log out</a>
+    </aside>
+
+    <main class="content">
+      <section class="welcome">
+        <h1>Profile</h1>
+        <p>Manage your personal information.</p>
+      </section>
+
+      <section class="panel profile-header">
+        <div class="avatar">AJ</div>
+        <div class="profile-meta">
+          <h2>Alex Johnson</h2>
+          <p>alex@example.com</p>
+          <span class="tag">Member since 2026</span>
+        </div>
+        <button type="button" class="ghost-btn">Change photo</button>
+      </section>
+
+      <section class="panel">
+        <h2>Edit Profile</h2>
+        <form action="#" method="post" class="profile-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" value="Alex">
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" value="Johnson">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" value="alex@example.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" placeholder="+234 800 000 0000">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bio">Bio</label>
+            <textarea id="bio" rows="4" placeholder="Tell us a little about yourself"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="auth-btn">Save Changes</button>
+            <button type="reset" class="ghost-btn">Cancel</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+  </div>
+</body>
+</html>

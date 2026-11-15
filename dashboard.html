@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Nexora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <a href="./dashboard.html" class="logo">Nexora</a>
+
+      <nav class="side-nav">
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+
+      <a href="login.html" class="logout">Log out</a>
+    </aside>
+
+    <main class="content">
+      <section class="welcome">
+        <h1>Welcome back, Alex</h1>
+        <p>Here is what has been happening with your account.</p>
+      </section>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <p class="stat-label">Total Orders</p>
+          <p class="stat-value">128</p>
+          <p class="stat-note">+12 this month</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-label">Total Spent</p>
+          <p class="stat-value">$4,820</p>
+          <p class="stat-note">+$320 this month</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-label">Active Downloads</p>
+          <p class="stat-value">12</p>
+          <p class="stat-note">3 expiring soon</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-label">Support Tickets</p>
+          <p class="stat-value">2</p>
+          <p class="stat-note">1 awaiting reply</p>
+        </div>
+      </section>
+
+      <section class="activity">
+        <h2>Recent Activity</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Item</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>20 Oct 2026</td>
+                <td>Galaxy S24</td>
+                <td>$699.99</td>
+                <td><span class="badge completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>18 Oct 2026</td>
+                <td>Galaxy Watch</td>
+                <td>$199.99</td>
+                <td><span class="badge pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>15 Oct 2026</td>
+                <td>Fast Charger</td>
+                <td>$19.00</td>
+                <td><span class="badge completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>12 Oct 2026</td>
+                <td>Laptop Stand</td>
+                <td>$35.00</td>
+                <td><span class="badge failed">Failed</span></td>
+              </tr>
+              <tr>
+                <td>09 Oct 2026</td>
+                <td>Wireless Headphones</td>
+                <td>$59.00</td>
+                <td><span class="badge completed">Completed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+  </div>
+</body>
+</html>
