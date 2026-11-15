@@ -1,0 +1,134 @@
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 1.25rem;
+    }
+
+    .hero {
+        padding: 4rem 1.25rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .features,
+    .products-preview {
+        padding: 3rem 1.25rem;
+    }
+
+    .features h2,
+    .products-preview h2 {
+        font-size: 1.7rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .footer {
+        padding: 2.5rem 1.25rem 1.25rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.95rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.25rem;
+    }
+
+    .card {
+        padding: 1.5rem 1rem;
+    }
+
+    .product-card img {
+        height: 170px;
+    }
+
+    .footer-grid {
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .product-detail {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.5rem;
+        padding: 1.25rem;
+    }
+
+    .back-link {
+        margin-left: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        padding: 1rem;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .sidebar .logo {
+        margin-bottom: 0;
+    }
+
+    .side-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+
+    .side-nav a,
+    .logout {
+        padding: 0.5rem 0.6rem;
+    }
+
+    .side-nav li {
+        margin-bottom: 0;
+    }
+
+    .logout {
+        margin-top: 0;
+    }
+
+    .content {
+        padding: 1.25rem;
+    }
+}

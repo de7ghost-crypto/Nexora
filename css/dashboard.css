@@ -1,0 +1,362 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: 100vh;
+}
+
+/* sidebar */
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .logo {
+    padding: 0 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.side-nav ul {
+    list-style: none;
+}
+
+.side-nav li {
+    margin-bottom: 0.4rem;
+}
+
+.side-nav a,
+.logout {
+    display: block;
+    padding: 0.7rem 0.75rem;
+    border-radius: 8px;
+    color: #cbd5ff;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.side-nav a:hover,
+.logout:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.side-nav a.active {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    color: #fff;
+}
+
+.logout {
+    margin-top: auto;
+}
+
+/* main area */
+.content {
+    min-width: 0;
+    padding: 2rem;
+}
+
+.welcome h1 {
+    font-size: 1.9rem;
+}
+
+.welcome p {
+    margin: 0.25rem 0 2rem;
+    color: #94a3b8;
+}
+
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.stat-card {
+    padding: 1.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.25);
+    border-color: #8b5cf6;
+}
+
+.stat-label {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.stat-value {
+    margin: 0.25rem 0;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.stat-note {
+    color: #8b9dff;
+    font-size: 0.85rem;
+}
+
+
+.activity h2 {
+    margin-bottom: 1rem;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 480px;
+}
+
+th,
+td {
+    padding: 0.9rem 1.1rem;
+    text-align: left;
+}
+
+th {
+    color: #cbd5ff;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+td {
+    color: #cbd5e1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.badge.completed {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+}
+
+.badge.pending {
+    background: rgba(234, 179, 8, 0.15);
+    color: #facc15;
+}
+
+.badge.failed {
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+}
+
+/* reusable card */
+.panel {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.panel h2 {
+    margin-bottom: 1.25rem;
+}
+
+/* profile header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.profile-header h2 {
+    margin-bottom: 0.15rem;
+}
+
+.profile-meta p {
+    margin-bottom: 0.5rem;
+    color: #94a3b8;
+}
+
+.profile-header .ghost-btn {
+    margin-left: auto;
+}
+
+.avatar {
+    display: grid;
+    place-items: center;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(139, 92, 246, 0.2);
+    border-radius: 999px;
+    color: #cbd5ff;
+    font-size: 0.85rem;
+}
+
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.profile-form .auth-btn {
+    width: auto;
+    padding: 0.8rem 2rem;
+}
+
+.ghost-btn {
+    padding: 0.8rem 1.5rem;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    color: #cbd5ff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.ghost-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #8b5cf6;
+    color: #fff;
+}
+/* setting rows */
+.setting-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.setting-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.panel form + .setting-row {
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.setting-row h3 {
+    font-size: 1rem;
+    color: #cbd5ff;
+}
+
+.setting-row p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+.switch input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.switch input:checked + .slider {
+    background-color: #8b5cf6;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(20px);
+}
+
+.switch input:focus-visible + .slider {
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.4);
+}
+
+.danger-zone {
+    border-color: rgba(239, 68, 68, 0.35);
+}
+
+.danger-zone h2 {
+    color: #f87171;
+}
+
+.danger-btn {
+    padding: 0.7rem 1.4rem;
+    background: transparent;
+    border: 1px solid #ef4444;
+    border-radius: 8px;
+    color: #f87171;
+    font-size: 1rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.3s, color 0.3s;
+}
+
+.danger-btn:hover {
+    background: #ef4444;
+    color: #fff;
+}
